@@ -1,0 +1,139 @@
+body {
+   font-family: 'Roboto', sans-serif; /* Utiliser Roboto comme police principale */
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background-color: #007bff; /* Couleur bleue */
+   color: white;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .logo img {
+   max-width: 100px; /* Taille du logo */
+}
+
+nav {
+   margin-right: 20px;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+
+nav ul li a:hover {
+   background-color: #0056b3; /* Couleur d'arrière-plan au survol */
+}
+
+.hero {
+  background-color: #f0f8ff; /* Couleur de fond attrayante pour le cadre */
+  color: black; /* Couleur du texte */
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* Ombre légère */
+}
+.welcome-message {
+  color: blue; /* Couleur bleue pour le message */
+  font-weight: bold; /* Texte en gras */
+  font-size: larger; /* Taille de police plus grande */
+  transition: opacity 0.5s ease-in-out; /* Transition douce pour l'opacité */
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+main {
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: transform .3s ease; /* Transition pour l'effet au survol */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Légère augmentation au survol */
+  box-shadow: rgba(0,0,0,0.2) 0px 4px 10px; /* Ombre légère au survol */
+}
+
+.product-images {
+  display: flex; /* Alignement des images des produits */
+}
+
+.product-images img {
+  max-width: 30%; /* Limiter la taille des images */
+  margin-right: 5%; /* Espacement entre les images */
+}
+
+.rating {
+  color: gold; /* Couleur pour les étoiles */
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.review {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.reviewer-img {
+  border-radius: 50%; /* Arrondir l'image de l'utilisateur */
+  width: 40px; /* Taille de l'image du client */
+  height: auto; /* Maintenir les proportions */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333; /* Couleur du pied de page */
+  color: white;
+}
+
+/* Styles pour les boutons */
+.buy-button {
+  background-color: #28a745; /* Vert */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer; /* Curseur pointer */
+}
+
+.buy-button:hover {
+  background-color: #218838; /* Vert plus foncé au survol */
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block; /* Afficher les éléments en bloc sur écrans petits */
+      margin-left: 0; /* Réinitialiser la marge */
+      margin-bottom: 10px; /* Ajouter un espacement entre les liens */
+      text-align:center; /* Centrer le texte sur mobile */
+  }
+}
